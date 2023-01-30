@@ -13,7 +13,7 @@ const TodoList = ({
   showCompletedTodos,
 }) => {
   return (
-    <div className="flex flex-col mt-7 rounded-lg overflow-hidden shadow-2xl">
+    <div className="flex flex-col mt-7 rounded overflow-hidden shadow-2xl">
       {todos.map((todo) => (
         <Todo
           key={todo.id}

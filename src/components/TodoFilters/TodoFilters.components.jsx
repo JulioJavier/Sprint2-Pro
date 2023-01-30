@@ -1,7 +1,7 @@
 
 const FiltersContainer = ({ children }) => {
     return (
-        <div className="flex items-center justify-between p-4 bg-gray-700 border-b border-solid border-gray-600">
+        <div className="flex items-center justify-between p-4 bg-DarkTheme-DarkDesaturatedBlue border-b border-solid border-gray-600">
             { children }
         </div>
     )
@@ -9,7 +9,7 @@ const FiltersContainer = ({ children }) => {
 
 const ItemsLeft = ( { total = 0 }) => {
     return (
-        <p className="text-gray-400 text-sm">
+        <p className="text-DarkTheme-DarkGrayishBlue2 text-sm">
             {total} items left
         </p>
     )
@@ -25,7 +25,7 @@ const FilterButtonContainer = ({ children }) => {
 
 const FilterButton = ( { action, active, filter }) => {
     return (
-        <button onClick={action} className={`hover:text-white cursor-pointer transition-all duration-300 ease-in-out ` + (active.toLowerCase().includes(filter.toLowerCase()) ? 'text-blue-400' : 'text-gray-400')}>
+        <button onClick={action} className={`hover:text-white cursor-pointer transition-all duration-300 ease-in-out ` + (active.toLowerCase().includes(filter.toLowerCase()) ? 'text-primary-BrightBlue' : 'text-DarkTheme-DarkGrayishBlue2')}>
             {filter}
         </button>
     )

@@ -2,7 +2,7 @@ import React from "react";
 
 const Title = () => {
   return (
-    <h1 className="text-5xl font-anton font-bold tracking-widest">Todo</h1>
+    <h1 className="text-5xl font-josefin font-bold tracking-widest text-DarkTheme-LightGrayishBlue">T O D O</h1>
   );
 };
 

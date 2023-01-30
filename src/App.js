@@ -3,26 +3,11 @@ import { Title, TodoInput, TodoList } from "./components";
 
 function App() {
   const [todos, setTodos] = useState([
-    {
-      id: 1,
-      title: "Learn React",
-      completed: false,
-    },
-    {
-      id: 2,
-      title: "Learn Redux",
-      completed: false,
-    },
-    {
-      id: 3,
-      title: "Learn Node",
-      completed: false,
-    },
-    {
-      id: 4,
-      title: "Learn Express",
-      completed: false,
-    },
+    // {
+    //   id: 1,
+    //   title: "Learn React",
+    //   completed: false,
+    // },
   ]);
 
   const [activeFilter, setActiveFilter] = useState("all");
@@ -87,7 +72,7 @@ function App() {
   }, [activeFilter, todos]);
 
   return (
-    <div className="font-inter bg-gray-900 min-h-screen h-full text-gray-100 flex items-center justify-center py-20 px-5">
+    <div className="font-josefin font-bold bg-DarkTheme-DarkBlue min-h-screen h-full text-DarkTheme-LightGrayishBlue flex items-center justify-center py-20 px-5">
       <div className="container flex flex-col max-w-xl">
         <Title />
         <TodoInput addTodo={addTodo} />
