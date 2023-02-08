@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
         josefin: "'Josefin Sans', bold, regular",
       },
       backgroundImage: {
-        'hero': "url('/public/bg-desktop-dark.jpg')",
+        hero: "url('/public/bg-desktop-dark.jpg')",
       },
       colors: {
         primary: {

@@ -1,7 +1,7 @@
 
 const FiltersContainer = ({ children }) => {
     return (
-        <div className="flex items-center justify-between p-2 bg-DarkTheme-DarkDesaturatedBlue border-b border-solid border-gray-600">
+        <div className="flex items-center justify-between p-2 bg-LightTheme-LightGray dark:bg-DarkTheme-DarkDesaturatedBlue border-b border-solid border-gray-600">
             { children }
         </div>
     )
@@ -9,7 +9,7 @@ const FiltersContainer = ({ children }) => {
 
 const ItemsLeft = ( { total = 0 }) => {
     return (
-        <p className="text-DarkTheme-DarkGrayishBlue2 text-sm">
+        <p className="text-LightTheme-DarkGrayishBlue3 dark:text-DarkTheme-DarkGrayishBlue2 text-sm">
             {total} items left
         </p>
     )
