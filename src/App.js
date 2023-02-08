@@ -90,27 +90,30 @@ function App() {
   }, [activeFilter, todos]);
 
   return (
-    <div className="font-josefin font-bold text-DarkTheme-LightGrayishBlue w-screen h-screen mx-auto flex">
+    <div className="font-josefin font-bold text-DarkTheme-LightGrayishBlue w-screen h-screen mx-auto flex bg-DarkTheme-DarkBlue">
 
-      <div className="flex flex-col items-center justify-center w-full mx-auto">
+      <div className="flex flex-col items-center justify-center w-full mx-auto bg-DarkTheme-DarkBlue">
       <Hero />
-      <div className="p-2 flex flex-col justify-center absolute top-10 w-1/2">    
-          <div className="flex justify-between">
-            <Title />
-            <BlackMode />
+        <div className="p-2 flex flex-col justify-center absolute top-10 w-1/2">    
+            <div className="flex justify-between">
+              <Title />
+              <BlackMode />
+            </div>
+            <div>
+              <TodoInput addTodo={addTodo} />
+              <TodoList
+                activeFilter={activeFilter}
+                todos={filteredTodos}
+                showAllTodos={showAllTodos}
+                showActiveTodos={showActiveTodos}
+                showCompletedTodos={showCompletedTodos}
+                handleSetComplete={handleSetComplete}
+                handleDelete={handleDelete}
+                handleClearComplete={handleClearComplete}
+              />
+            </div>
           </div>
-          <TodoInput addTodo={addTodo} />
-          <TodoList
-            activeFilter={activeFilter}
-            todos={filteredTodos}
-            showAllTodos={showAllTodos}
-            showActiveTodos={showActiveTodos}
-            showCompletedTodos={showCompletedTodos}
-            handleSetComplete={handleSetComplete}
-            handleDelete={handleDelete}
-            handleClearComplete={handleClearComplete}
-          />
-        </div>
+
       </div>
     </div>
   );
