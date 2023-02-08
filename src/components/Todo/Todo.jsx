@@ -3,7 +3,7 @@ import React from "react";
 const Todo = ({ todo, handleSetComplete, handleDelete }) => {
   const { id, title, completed } = todo;
   return (
-    <div className="flex items-center p-4 bg-DarkTheme-DarkDesaturatedBlue border-b border-solid border-gray-600 justify-between">
+    <div className="flex items-center p-2 bg-DarkTheme-DarkDesaturatedBlue border-b border-solid border-gray-600 justify-between">
       <div className="flex items-center">
         {completed ? (
           <div onClick={() => handleSetComplete(id)} className="bg-gradient-to-tl  from-checkGradient-200 to-checkGradient-100 p-1 rounded-full cursor-pointer">

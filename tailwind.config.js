@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         josefin: "'Josefin Sans', bold, regular",
       },
+      backgroundImage: {
+        'hero': "url('/public/bg-desktop-dark.jpg')",
+      },
       colors: {
         primary: {
           BrightBlue: "hsl(220, 98%, 61%)",
